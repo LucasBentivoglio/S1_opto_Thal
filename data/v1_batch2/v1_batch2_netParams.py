@@ -133,34 +133,11 @@ netParams.synMechParams['E->I'] = {'mod': 'DetAMPANMDA','Dep': 700.568,'Fac': 17
 netParams.synMechParams['I->I'] = {'mod': 'DetGABAAB','Dep': 775.316,'Fac': 9.435,'Use': 0.109,'tau_d_GABAA': 7.487,'GABAB_ratio':0.0}
 netParams.synMechParams['I->E'] = {'mod': 'DetGABAAB','Dep': 606.433,'Fac': 24.743,'Use': 0.0913,'tau_d_GABAA': 7.192,'GABAB_ratio':0.0}
 
-
-netParams.connParams['E->E_A'] = { 
-                        'preConds': {'pop': 'L4_SSC_cADpyr_3'},
-                        'postConds': {'pop': 'L4_UPC_cADpyr_5'},
-                        'probability': 1.0,
-                        'synsPerConn': 2,     
-                        'sec': 'basal',                  # target postsyn section
-                        'synMech': 'E->E',              # target synaptic mechanism
-                        'weight': 0.5,                 # synaptic weight 
-                        'delay': 0.5,                 # synaptic delay 
-                        } 
-
-netParams.connParams['E->E_B'] = { 
-                        'preConds': {'pop': 'L4_UPC_cADpyr_5'},
-                        'postConds': {'pop': 'L4_TPC_cADpyr_4'},
-                        'probability': 1.0,
-                        'synsPerConn': 5,     
-                        'sec': 'basal',                  # target postsyn section
-                        'synMech': 'E->E',              # target synaptic mechanism
-                        'weight': 0.5,                 # synaptic weight 
-                        'delay': 0.5,                 # synaptic delay 
-                        } 
-
-netParams.connParams['E->E_C'] = { 
+netParams.connParams['E->E'] = { 
                         'preConds': {'pop': 'L4_TPC_cADpyr_4'},
                         'postConds': {'pop': 'L4_SSC_cADpyr_3'},
                         'probability': 1.0,
-                        'synsPerConn': 10,     
+                        'synsPerConn': 5,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
                         'weight': 0.5,                 # synaptic weight 
@@ -181,12 +158,12 @@ netParams.connParams['E->I'] = {
 
 netParams.connParams['I->E'] = { 
                         'preConds': {'pop': cfg.Ipops},
-                        'postConds': {'pop': cfg.Epops},
-                        'probability': 0.1,
+                        'postConds': {'pop':'L4_SSC_cADpyr_3'},
+                        'probability': 0.5,
                         'synsPerConn': 10,     
-                        'sec': 'all',                  # target postsyn section
+                        'sec': 'basal',                  # target postsyn section
                         'synMech': 'I->E',              # target synaptic mechanism
-                        'weight': 0.5,                 # synaptic weight 
+                        'weight': 0.1,                 # synaptic weight 
                         'delay': 0.1,                 # synaptic delay 
                         }    
 
@@ -271,57 +248,6 @@ if cfg.connect_ThVecStim_S1:
                     'synMech': ESynMech_Th}  
 
                 netParams.connParams['thal_'+pre+'_'+post]['convergence'] = conn_convergence 
-#------------------------------------------------------------------------------
-# NetStim inputs to simulate Spontaneous synapses + background in S1 neurons - data from Rat
-#------------------------------------------------------------------------------
-# Spont and BG
-netParams.synMechParams['AMPA'] = {'mod':'MyExp2SynBB', 'tau1': 0.2, 'tau2': 1.74, 'e': 0}
-netParams.synMechParams['NMDA'] = {'mod': 'MyExp2SynNMDABB', 'tau1NMDA': 0.29, 'tau2NMDA': 43, 'e': 0}
-netParams.synMechParams['GABAA'] = {'mod':'MyExp2SynBB', 'tau1': 0.2, 'tau2': 8.3, 'e': -80}
-netParams.synMechParams['GABAB'] = {'mod':'MyExp2SynBB', 'tau1': 3.5, 'tau2': 260.9, 'e': -93} 
-ESynMech = ['AMPA', 'NMDA']
-ISynMech = ['GABAA', 'GABAB']
-
-cfg.addStimSynS1 = True
-cfg.rateStimI = 50.0 # Hz
-cfg.rateStimE = 20.0
-SourcesNumber = 10 # for each post Mtype - sec distribution
-
-if cfg.addStimSynS1:      
-    for post in cfg.Ipops + cfg.Epops:
-
-        synperNeuron = 10
-        ratespontaneous = cfg.rateStimI
-        for qSnum in range(SourcesNumber):
-            ratesdifferentiation = (0.8 + 0.4*qSnum/(SourcesNumber-1)) * (synperNeuron*ratespontaneous)/SourcesNumber
-            netParams.stimSourceParams['StimSynS1_S_all_INH->' + post + '_' + str(qSnum)] = {'type': 'NetStim', 'rate': ratesdifferentiation, 'noise': 1.0}
-
-        synperNeuron = 10
-        ratespontaneous = cfg.rateStimE
-        for qSnum in range(SourcesNumber):
-            ratesdifferentiation = (0.8 + 0.4*qSnum/(SourcesNumber-1)) * (synperNeuron*ratespontaneous)/SourcesNumber
-            netParams.stimSourceParams['StimSynS1_S_all_EXC->' + post + '_' + str(qSnum)] = {'type': 'NetStim', 'rate': ratesdifferentiation, 'noise': 1.0}
-            
-    #------------------------------------------------------------------------------
-    for post in cfg.Epops+cfg.Ipops:
-        for qSnum in range(SourcesNumber):
-            netParams.stimTargetParams['StimSynS1_T_all_EXC->' + post + '_' + str(qSnum)] = {
-                'source': 'StimSynS1_S_all_EXC->' + post + '_' + str(qSnum), 
-                'synMech': 'AMPA', 
-                'conds': {'cellType': post}, 
-                'sec': 'all', 
-                'weight': 0.5,
-                'delay': 0.1}
-
-    for post in cfg.Epops+cfg.Ipops:
-        for qSnum in range(SourcesNumber):
-            netParams.stimTargetParams['StimSynS1_T_all_INH->' + post + '_' + str(qSnum)] = {
-                'source': 'StimSynS1_S_all_INH->' + post + '_' + str(qSnum), 
-                'conds': {'cellType': post}, 
-                'synMech': 'GABAA', 
-                'sec': 'all', 
-                'weight': 0.5,
-                'delay': 0.1}
 
 print(netParams.connParams.keys())
 

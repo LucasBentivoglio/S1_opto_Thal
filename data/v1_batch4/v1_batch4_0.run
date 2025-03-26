@@ -1,0 +1,232 @@
+numprocs=10
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+
+Start time:  2025-03-26 00:26:46.008269
+  Number of cells on node 0: 50 
+  Done; cell creation time = 2.04 s.
+Making connections...
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 9: 50 
+  Number of connections on node 9: 3190 
+  Number of synaptic contacts on node 9: 32810 
+  Number of stims on node 9: 600 
+Recording 0 traces of 0 types on node 9
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 1: 50 
+  Number of connections on node 1: 3170 
+  Number of synaptic contacts on node 1: 32610 
+  Number of stims on node 1: 600 
+Recording 0 traces of 0 types on node 1
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 2: 50 
+  Number of connections on node 2: 3171 
+  Number of synaptic contacts on node 2: 32620 
+  Number of stims on node 2: 600 
+Recording 0 traces of 0 types on node 2
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 3: 50 
+  Number of connections on node 3: 3176 
+  Number of synaptic contacts on node 3: 32670 
+  Number of stims on node 3: 600 
+Recording 0 traces of 0 types on node 3
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 4: 50 
+  Number of connections on node 4: 3172 
+  Number of synaptic contacts on node 4: 32630 
+  Number of stims on node 4: 600 
+Recording 0 traces of 0 types on node 4
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 5: 50 
+  Number of connections on node 5: 3166 
+  Number of synaptic contacts on node 5: 32570 
+  Number of stims on node 5: 600 
+Recording 0 traces of 0 types on node 5
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 6: 50 
+  Number of connections on node 6: 3205 
+  Number of synaptic contacts on node 6: 32960 
+  Number of stims on node 6: 600 
+Recording 0 traces of 0 types on node 6
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 7: 50 
+  Number of connections on node 7: 3188 
+  Number of synaptic contacts on node 7: 32790 
+  Number of stims on node 7: 600 
+Recording 0 traces of 0 types on node 7
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from data/v1_batch4/v1_batch4_0_cfg.json
+Loading file data/v1_batch4/v1_batch4_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from data/v1_batch4/v1_batch4_netParams.py
+L4_BP_cNAC_0 cNAC_L6NGC
+L4_BTC_cNAC_1 cNAC_L6NGC
+L4_NBC_cNAC_2 cNAC_L6NGC
+L4_SSC_cADpyr_3 cADpyr_L4TPC
+L4_TPC_cADpyr_4 cADpyr_L4TPC
+L4_UPC_cADpyr_5 cADpyr_L4UPC
+odict_keys(['E->E_A', 'E->E_B', 'E->E_C', 'E->I', 'I->E', 'thal_VPM_sTC_L4_SSC_cADpyr_3', 'thal_VPM_sTC_L4_TPC_cADpyr_4', 'thal_VPM_sTC_L4_UPC_cADpyr_5', 'thal_VPM_sTC_L4_BP_cNAC_0', 'thal_VPM_sTC_L4_BTC_cNAC_1', 'thal_VPM_sTC_L4_NBC_cNAC_2'])
+  Number of cells on node 8: 50 
+  Number of connections on node 8: 3254 
+  Number of synaptic contacts on node 8: 33450 
+  Number of stims on node 8: 600 
+Recording 0 traces of 0 types on node 8
+  Number of connections on node 0: 3161 
+  Number of synaptic contacts on node 0: 32520 
+  Done; cell connection time = 10.13 s.
+Adding stims...
+  Number of stims on node 0: 600 
+  Done; cell stims creation time = 0.95 s.
+Recording 30 traces of 1 types on node 0
+0.0s
+
+Running simulation using NEURON for 400.0 ms...
+0.1s
+0.2s
+0.3s
+0.4s
+  Done; run time = 813.30 s; real-time ratio: 0.00.
+
+Gathering data...
+  Done; gather time = 33.60 s.
+
+Analyzing...
+  Cells: 500
+  Connections: 32153 (64.31 per cell)
+  Synaptic contacts: 333630 (667.26 per cell)
+  Spikes: 3618 (18.09 Hz)
+  Simulated time: 0.4 s; 10 workers
+  Run time: 813.30 s
+   L4_BP_cNAC_0 : 48.150 Hz
+   L4_BTC_cNAC_1 : 47.050 Hz
+   L4_NBC_cNAC_2 : 43.750 Hz
+   L4_SSC_cADpyr_3 : 14.700 Hz
+   L4_TPC_cADpyr_4 : 9.750 Hz
+   L4_UPC_cADpyr_5 : 7.500 Hz
+   VPM_sTC : 2.500 Hz
+Saving output as data/v1_batch4/v1_batch4_0_data.pkl ... 
+Finished saving!
+  Done; saving time = 97.22 s.
+Plotting 2D representation of network cell locations and connections...
+Preparing LFP data...
+Plotting LFP time series...
+Preparing LFP data...
+Preparing PSD data...
+Plotting LFP power spectral density (PSD)...
+Preparing LFP data...
+Preparing spectrogram data...
+Plotting LFP spectrogram...
+Preparing spike data...
+Plotting raster...
+Plotting recorded cell traces ... trace
+  Done; plotting time = 38.24 s
+
+Total time = 997.17 s

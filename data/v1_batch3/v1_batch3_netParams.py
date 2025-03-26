@@ -133,34 +133,11 @@ netParams.synMechParams['E->I'] = {'mod': 'DetAMPANMDA','Dep': 700.568,'Fac': 17
 netParams.synMechParams['I->I'] = {'mod': 'DetGABAAB','Dep': 775.316,'Fac': 9.435,'Use': 0.109,'tau_d_GABAA': 7.487,'GABAB_ratio':0.0}
 netParams.synMechParams['I->E'] = {'mod': 'DetGABAAB','Dep': 606.433,'Fac': 24.743,'Use': 0.0913,'tau_d_GABAA': 7.192,'GABAB_ratio':0.0}
 
-
-netParams.connParams['E->E_A'] = { 
-                        'preConds': {'pop': 'L4_SSC_cADpyr_3'},
-                        'postConds': {'pop': 'L4_UPC_cADpyr_5'},
-                        'probability': 1.0,
-                        'synsPerConn': 2,     
-                        'sec': 'basal',                  # target postsyn section
-                        'synMech': 'E->E',              # target synaptic mechanism
-                        'weight': 0.5,                 # synaptic weight 
-                        'delay': 0.5,                 # synaptic delay 
-                        } 
-
-netParams.connParams['E->E_B'] = { 
-                        'preConds': {'pop': 'L4_UPC_cADpyr_5'},
-                        'postConds': {'pop': 'L4_TPC_cADpyr_4'},
-                        'probability': 1.0,
-                        'synsPerConn': 5,     
-                        'sec': 'basal',                  # target postsyn section
-                        'synMech': 'E->E',              # target synaptic mechanism
-                        'weight': 0.5,                 # synaptic weight 
-                        'delay': 0.5,                 # synaptic delay 
-                        } 
-
-netParams.connParams['E->E_C'] = { 
+netParams.connParams['E->E'] = { 
                         'preConds': {'pop': 'L4_TPC_cADpyr_4'},
                         'postConds': {'pop': 'L4_SSC_cADpyr_3'},
                         'probability': 1.0,
-                        'synsPerConn': 10,     
+                        'synsPerConn': 5,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
                         'weight': 0.5,                 # synaptic weight 
