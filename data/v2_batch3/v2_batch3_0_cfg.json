@@ -1,0 +1,580 @@
+{
+    "simConfig": {
+        "Epops": [
+            "L4_SSC_cADpyr_3",
+            "L4_TPC_cADpyr_4",
+            "L4_TPC_cADpyr_5",
+            "L4_UPC_cADpyr_6"
+        ],
+        "Ipops": [
+            "L4_BP_cNAC_0",
+            "L4_BTC_cNAC_1",
+            "L4_NBC_cNAC_2"
+        ],
+        "Morpholist": {
+            "108767": "rp140319_ChC_3_idA_-_Scale_x1.000_y0.950_z1.000_-_Clone_1.asc",
+            "114284": "dend-rp120803_P_1_idB_axon-C031097B-P3_-_Scale_x1.000_y0.975_z1.000_-_Clone_0.asc",
+            "129252": "dend-mtC050800E_idD_axon-sm100429a1-5_INT_idD_-_Scale_x1.000_y1.050_z1.000_-_Clone_0.asc",
+            "133426": "dend-mtC050800E_idD_axon-sm100429a1-5_INT_idD_-_Scale_x1.000_y0.975_z1.000_-_Clone_0.asc",
+            "138433": "rp110131_L5-1_idA_-_Scale_x1.000_y1.025_z1.000_-_Clone_0.asc",
+            "141369": "dend-rp120608_P_3_idD_axon-sm100429a1-5_INT_idG_-_Scale_x1.000_y1.050_z1.000_-_Clone_0.asc",
+            "141766": "rp110127_L5-2_idG_-_Scale_x1.000_y0.950_z1.000.asc"
+        },
+        "TC_S1": {
+            "VPM_sTC": true
+        },
+        "TC_S1_weightE": 0.000175,
+        "TC_S1_weightI": 0.0005,
+        "addSynMechs": true,
+        "allowConnsWithWeight0": true,
+        "allowSelfConns": false,
+        "allpops": [
+            "L4_SSC_cADpyr_3",
+            "L4_TPC_cADpyr_4",
+            "L4_TPC_cADpyr_5",
+            "L4_UPC_cADpyr_6",
+            "L4_BP_cNAC_0",
+            "L4_BTC_cNAC_1",
+            "L4_NBC_cNAC_2"
+        ],
+        "analysis": {
+            "plot2Dnet": {
+                "figSize": [
+                    12,
+                    12
+                ],
+                "fontSize": 12,
+                "include": [
+                    "L4_SSC_cADpyr_3",
+                    "L4_TPC_cADpyr_4",
+                    "L4_TPC_cADpyr_5",
+                    "L4_UPC_cADpyr_6",
+                    "L4_BP_cNAC_0",
+                    "L4_BTC_cNAC_1",
+                    "L4_NBC_cNAC_2"
+                ],
+                "saveFig": true,
+                "showConns": false,
+                "view": "xz"
+            },
+            "plotLFP": {
+                "maxFreq": 500,
+                "plots": [
+                    "timeSeries",
+                    "locations",
+                    "spectrogram"
+                ],
+                "saveFig": true,
+                "separation": 1.0,
+                "showFig": false,
+                "timeRange": [
+                    498,
+                    513
+                ]
+            },
+            "plotRaster": {
+                "dpi": 100,
+                "figSize": [
+                    18,
+                    5
+                ],
+                "fontSize": 12,
+                "marker": "o",
+                "markerSize": 4,
+                "orderInverse": true,
+                "popRates": true,
+                "saveFig": true,
+                "showFig": false,
+                "timeRange": [
+                    498,
+                    513
+                ]
+            },
+            "plotTraces": {
+                "figSize": [
+                    18,
+                    5
+                ],
+                "include": [
+                    [
+                        "L4_SSC_cADpyr_3",
+                        0
+                    ],
+                    [
+                        "L4_SSC_cADpyr_3",
+                        10
+                    ],
+                    [
+                        "L4_SSC_cADpyr_3",
+                        20
+                    ],
+                    [
+                        "L4_SSC_cADpyr_3",
+                        30
+                    ],
+                    [
+                        "L4_SSC_cADpyr_3",
+                        40
+                    ],
+                    [
+                        "L4_TPC_cADpyr_4",
+                        0
+                    ],
+                    [
+                        "L4_TPC_cADpyr_4",
+                        10
+                    ],
+                    [
+                        "L4_TPC_cADpyr_4",
+                        20
+                    ],
+                    [
+                        "L4_TPC_cADpyr_4",
+                        30
+                    ],
+                    [
+                        "L4_TPC_cADpyr_4",
+                        40
+                    ],
+                    [
+                        "L4_TPC_cADpyr_5",
+                        0
+                    ],
+                    [
+                        "L4_TPC_cADpyr_5",
+                        10
+                    ],
+                    [
+                        "L4_TPC_cADpyr_5",
+                        20
+                    ],
+                    [
+                        "L4_TPC_cADpyr_5",
+                        30
+                    ],
+                    [
+                        "L4_TPC_cADpyr_5",
+                        40
+                    ],
+                    [
+                        "L4_UPC_cADpyr_6",
+                        0
+                    ],
+                    [
+                        "L4_UPC_cADpyr_6",
+                        10
+                    ],
+                    [
+                        "L4_UPC_cADpyr_6",
+                        20
+                    ],
+                    [
+                        "L4_UPC_cADpyr_6",
+                        30
+                    ],
+                    [
+                        "L4_UPC_cADpyr_6",
+                        40
+                    ],
+                    [
+                        "L4_BP_cNAC_0",
+                        0
+                    ],
+                    [
+                        "L4_BP_cNAC_0",
+                        10
+                    ],
+                    [
+                        "L4_BP_cNAC_0",
+                        20
+                    ],
+                    [
+                        "L4_BP_cNAC_0",
+                        30
+                    ],
+                    [
+                        "L4_BP_cNAC_0",
+                        40
+                    ],
+                    [
+                        "L4_BTC_cNAC_1",
+                        0
+                    ],
+                    [
+                        "L4_BTC_cNAC_1",
+                        10
+                    ],
+                    [
+                        "L4_BTC_cNAC_1",
+                        20
+                    ],
+                    [
+                        "L4_BTC_cNAC_1",
+                        30
+                    ],
+                    [
+                        "L4_BTC_cNAC_1",
+                        40
+                    ],
+                    [
+                        "L4_NBC_cNAC_2",
+                        0
+                    ],
+                    [
+                        "L4_NBC_cNAC_2",
+                        10
+                    ],
+                    [
+                        "L4_NBC_cNAC_2",
+                        20
+                    ],
+                    [
+                        "L4_NBC_cNAC_2",
+                        30
+                    ],
+                    [
+                        "L4_NBC_cNAC_2",
+                        40
+                    ]
+                ],
+                "oneFigPer": "trace",
+                "overlay": true,
+                "saveFig": true,
+                "showFig": false,
+                "timeRange": [
+                    498,
+                    513
+                ],
+                "ylim": [
+                    -100,
+                    50
+                ]
+            }
+        },
+        "backupCfgFile": null,
+        "bin_size": 0.05,
+        "cache_efficient": true,
+        "cellNumber": {
+            "L4_BP_cNAC_0": 13,
+            "L4_BTC_cNAC_1": 15,
+            "L4_NBC_cNAC_2": 15,
+            "L4_SSC_cADpyr_3": 73,
+            "L4_TPC_cADpyr_4": 250,
+            "L4_TPC_cADpyr_5": 278,
+            "L4_UPC_cADpyr_6": 204,
+            "VPM_sTC": 200
+        },
+        "cellsrec": 2,
+        "checkErrors": false,
+        "compactConnFormat": false,
+        "connRandomSecFromList": true,
+        "connect_ThVecStim_S1": true,
+        "coreneuron": false,
+        "createNEURONObj": true,
+        "createPyStruct": true,
+        "cvode_active": false,
+        "cvode_atol": 1e-06,
+        "distributeSynsUniformly": true,
+        "dt": 0.025,
+        "dump_coreneuron_model": false,
+        "duration": 600.0,
+        "f_osc": 0.01,
+        "filename": "model_output",
+        "gatherOnlySimData": false,
+        "gid_list": {
+            "L4_BP_cNAC_0": 108767,
+            "L4_BTC_cNAC_1": 141766,
+            "L4_NBC_cNAC_2": 138433,
+            "L4_SSC_cADpyr_3": 141369,
+            "L4_TPC_cADpyr_4": 129252,
+            "L4_TPC_cADpyr_5": 133426,
+            "L4_UPC_cADpyr_6": 114284
+        },
+        "gpu": false,
+        "hParams": {
+            "celsius": 34,
+            "v_init": -84.0
+        },
+        "hoclist": {
+            "108767": "cNAC_L6NGC",
+            "114284": "cADpyr_L4UPC",
+            "129252": "cADpyr_L4TPC",
+            "133426": "cADpyr_L4TPC",
+            "138433": "cNAC_L6NGC",
+            "141369": "cADpyr_L4TPC",
+            "141766": "cNAC_L6NGC"
+        },
+        "includeParamsLabel": false,
+        "invertedYCoord": true,
+        "max_rate": 100.0,
+        "oneSynPerNetcon": true,
+        "popLabel": {
+            "L4_BP_cNAC_0": "L4_BP_cNAC_0",
+            "L4_BTC_cNAC_1": "L4_BTC_cNAC_1",
+            "L4_NBC_cNAC_2": "L4_NBC_cNAC_2",
+            "L4_SSC_cADpyr_3": "L4_SSC_cADpyr_3",
+            "L4_TPC_cADpyr_4": "L4_TPC_cADpyr_4",
+            "L4_TPC_cADpyr_5": "L4_TPC_cADpyr_5",
+            "L4_UPC_cADpyr_6": "L4_UPC_cADpyr_6",
+            "VPM_sTC": "VPM_sTC"
+        },
+        "popNumber": {
+            "L4_BP_cNAC_0": 13,
+            "L4_BTC_cNAC_1": 15,
+            "L4_NBC_cNAC_2": 15,
+            "L4_SSC_cADpyr_3": 73,
+            "L4_TPC_cADpyr_4": 250,
+            "L4_TPC_cADpyr_5": 278,
+            "L4_UPC_cADpyr_6": 204,
+            "VPM_sTC": 200
+        },
+        "printPopAvgRates": true,
+        "printRunTime": 0.1,
+        "printSynsAfterRule": false,
+        "progressBar": 2,
+        "pt3dRelativeToCellLocation": true,
+        "rand123GlobalIndex": null,
+        "random123": false,
+        "recordCells": [
+            [
+                "L4_SSC_cADpyr_3",
+                0
+            ],
+            [
+                "L4_SSC_cADpyr_3",
+                10
+            ],
+            [
+                "L4_SSC_cADpyr_3",
+                20
+            ],
+            [
+                "L4_SSC_cADpyr_3",
+                30
+            ],
+            [
+                "L4_SSC_cADpyr_3",
+                40
+            ],
+            [
+                "L4_TPC_cADpyr_4",
+                0
+            ],
+            [
+                "L4_TPC_cADpyr_4",
+                10
+            ],
+            [
+                "L4_TPC_cADpyr_4",
+                20
+            ],
+            [
+                "L4_TPC_cADpyr_4",
+                30
+            ],
+            [
+                "L4_TPC_cADpyr_4",
+                40
+            ],
+            [
+                "L4_TPC_cADpyr_5",
+                0
+            ],
+            [
+                "L4_TPC_cADpyr_5",
+                10
+            ],
+            [
+                "L4_TPC_cADpyr_5",
+                20
+            ],
+            [
+                "L4_TPC_cADpyr_5",
+                30
+            ],
+            [
+                "L4_TPC_cADpyr_5",
+                40
+            ],
+            [
+                "L4_UPC_cADpyr_6",
+                0
+            ],
+            [
+                "L4_UPC_cADpyr_6",
+                10
+            ],
+            [
+                "L4_UPC_cADpyr_6",
+                20
+            ],
+            [
+                "L4_UPC_cADpyr_6",
+                30
+            ],
+            [
+                "L4_UPC_cADpyr_6",
+                40
+            ],
+            [
+                "L4_BP_cNAC_0",
+                0
+            ],
+            [
+                "L4_BP_cNAC_0",
+                10
+            ],
+            [
+                "L4_BP_cNAC_0",
+                20
+            ],
+            [
+                "L4_BP_cNAC_0",
+                30
+            ],
+            [
+                "L4_BP_cNAC_0",
+                40
+            ],
+            [
+                "L4_BTC_cNAC_1",
+                0
+            ],
+            [
+                "L4_BTC_cNAC_1",
+                10
+            ],
+            [
+                "L4_BTC_cNAC_1",
+                20
+            ],
+            [
+                "L4_BTC_cNAC_1",
+                30
+            ],
+            [
+                "L4_BTC_cNAC_1",
+                40
+            ],
+            [
+                "L4_NBC_cNAC_2",
+                0
+            ],
+            [
+                "L4_NBC_cNAC_2",
+                10
+            ],
+            [
+                "L4_NBC_cNAC_2",
+                20
+            ],
+            [
+                "L4_NBC_cNAC_2",
+                30
+            ],
+            [
+                "L4_NBC_cNAC_2",
+                40
+            ]
+        ],
+        "recordCellsSpikes": -1,
+        "recordDipole": false,
+        "recordDipolesHNN": false,
+        "recordLFP": [
+            [
+                0,
+                600,
+                500
+            ],
+            [
+                100,
+                600,
+                500
+            ],
+            [
+                200,
+                600,
+                500
+            ],
+            [
+                0,
+                750,
+                500
+            ],
+            [
+                100,
+                750,
+                500
+            ],
+            [
+                200,
+                750,
+                500
+            ],
+            [
+                0,
+                900,
+                500
+            ],
+            [
+                100,
+                900,
+                500
+            ],
+            [
+                200,
+                900,
+                500
+            ]
+        ],
+        "recordStep": 0.025,
+        "recordStim": false,
+        "recordTime": false,
+        "recordTraces": {
+            "V_soma": {
+                "loc": 0.5,
+                "sec": "soma_0",
+                "var": "v"
+            }
+        },
+        "saveCSV": false,
+        "saveCellConns": true,
+        "saveCellSecs": true,
+        "saveDat": false,
+        "saveDataInclude": [
+            "simData",
+            "simConfig",
+            "net",
+            "netParams"
+        ],
+        "saveDipoleCells": false,
+        "saveDipolePops": false,
+        "saveDpk": false,
+        "saveFolder": "data/v2_batch3",
+        "saveHDF5": false,
+        "saveJson": false,
+        "saveLFPCells": false,
+        "saveLFPPops": false,
+        "saveMat": false,
+        "savePickle": true,
+        "saveTiming": false,
+        "seeds": {
+            "cell": 4321,
+            "conn": 4321,
+            "loc": 4321,
+            "stim": 1000
+        },
+        "simLabel": "v2_batch3_0",
+        "tdur": 40,
+        "thalamicpops": [
+            "VPM_sTC"
+        ],
+        "timestampFilename": false,
+        "timing": true,
+        "tmin": 500,
+        "tstop": 1000.0,
+        "use_fast_imem": false,
+        "validateNetParams": false,
+        "verbose": false
+    }
+}

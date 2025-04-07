@@ -92,7 +92,7 @@ for cellName in cfg.gid_list.keys():
 # L23        0.198      0.089	0.286
 # All     1378.8 um
 
-layer = {'1':[0.0, 0.089], '2': [0.089,0.159], '3': [0.159,0.309], '23': [0.089,0.309], '4':[0.309,0.418], '5': [0.418,0.684], '6': [0.684,1.0], 
+layer = {'1':[0.0, 0.089], '2': [0.089,0.159], '3': [0.159,0.286], '23': [0.089,0.286], '4':[0.286,0.421], '5': [0.421,0.684], '6': [0.684,1.0], 
 'longS1': [2.2,2.3], 'longS2': [2.3,2.4]}  # normalized layer boundaries
 
 #Th pop
@@ -103,9 +103,9 @@ ymax={'ss_RTN_o': 1766, 'ss_RTN_m': 1844, 'ss_RTN_i': 2000, 'VPL_sTC': 2156, 'VP
 # General network parameters
 #------------------------------------------------------------------------------
 netParams.scale = 1.0 # Scale factor for number of cells
-netParams.sizeX = 200.0 # x-dimension (horizontal length) size in um
-netParams.sizeY = 2080.0 # y-dimension (vertical height or cortical depth) size in um
-netParams.sizeZ = 200.0 # z-dimension (horizontal depth) size in um
+netParams.sizeX = 100.0 # x-dimension (horizontal length) size in um
+netParams.sizeY = 1378.8 # y-dimension (vertical height or cortical depth) size in um
+netParams.sizeZ = 100.0 # z-dimension (horizontal depth) size in um
 netParams.shape = 'cylinder' # cylindrical (column-like) volume
 netParams.rotateCellsRandomly = True
    
@@ -137,11 +137,11 @@ netParams.synMechParams['I->E'] = {'mod': 'DetGABAAB','Dep': 606.433,'Fac': 24.7
 netParams.connParams['E->E_A'] = { 
                         'preConds': {'pop': ['L4_SSC_cADpyr_3', 'L4_TPC_cADpyr_4']},
                         'postConds': {'pop': 'L4_UPC_cADpyr_6'},
-                        'probability': 0.5,
-                        'synsPerConn': 3,     
+                        'probability': 1.0,
+                        'synsPerConn': 2,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
-                        'weight': 0.3,                 # synaptic weight 
+                        'weight': 0.25,                 # synaptic weight 
                         'delay': 0.5,                 # synaptic delay 
                         } 
 
@@ -152,7 +152,7 @@ netParams.connParams['E->E_B'] = {
                         'synsPerConn': 5,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
-                        'weight': 0.3,                 # synaptic weight 
+                        'weight': 0.25,                 # synaptic weight 
                         'delay': 0.5,                 # synaptic delay 
                         } 
 
@@ -160,10 +160,10 @@ netParams.connParams['E->E_C'] = {
                         'preConds': {'pop': 'L4_TPC_cADpyr_5'},
                         'postConds': {'pop': 'L4_SSC_cADpyr_3'},
                         'probability': 1.0,
-                        'synsPerConn': 5,      # was 10
+                        'synsPerConn': 10,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
-                        'weight': 0.3,                 # synaptic weight 
+                        'weight': 0.25,                 # synaptic weight 
                         'delay': 0.5,                 # synaptic delay 
                         }    
 
@@ -171,18 +171,18 @@ netParams.connParams['E->E_D'] = {
                         'preConds': {'pop': 'L4_TPC_cADpyr_5'},
                         'postConds': {'pop': 'L4_TPC_cADpyr_4'},
                         'probability': 1.0,
-                        'synsPerConn': 4,     # was 8 
+                        'synsPerConn': 5,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
-                        'weight': 0.3,                 # synaptic weight 
+                        'weight': 0.25,                 # synaptic weight 
                         'delay': 0.5,                 # synaptic delay 
                         }    
 
 netParams.connParams['E->I'] = { 
                         'preConds': {'pop': cfg.Epops},
                         'postConds': {'pop': cfg.Ipops},
-                        'probability': 0.7,
-                        'synsPerConn': 4,     # was 6
+                        'probability': 0.75,
+                        'synsPerConn': 10,     
                         'sec': 'somatic',                  # target postsyn section
                         'loc': 0.5,                  # target postsyn loc
                         'synMech': 'E->I',              # target synaptic mechanism
@@ -231,17 +231,12 @@ for metype in cfg.thalamicpops: # metype
     cellsList = []            
     for cellLabel in range(cfg.cellNumber[metype]): # all cells in metype
         spike_times = inhomogeneous_poisson(rate, cfg.bin_size)
-        if cellLabel < cfg.cellNumber[metype]/20:
-            cellsList.append({'cellLabel': cellLabel, 'spkTimes': [500*(spike_times[-1]-501.75), spike_times[0]]})
-        else:
-            cellsList.append({'cellLabel': cellLabel, 'spkTimes': [spike_times[0]]})
-        # cellsList.append({'cellLabel': cellLabel, 'spkTimes': list(spike_times[:1])})
-        # print(500*(spike_times[-1]-501.75))
+        cellsList.append({'cellLabel': cellLabel, 'spkTimes': list(spike_times[:1])})
+        # print(cellLabel, spike_times[::3])
         
     if np.size(cellsList) > 0:
         netParams.popParams[metype] = {'cellModel': 'VecStim', 'cellsList': cellsList}        
 
-# print(cellsList)
 
 if cfg.connect_ThVecStim_S1:
 
@@ -274,7 +269,7 @@ if cfg.connect_ThVecStim_S1:
                     netParams.connParams['thal_'+pre+'_'+post]['weight'] = 0.000057
 
                 if 'L4_TPC_cADpyr_4' in post:
-                    netParams.connParams['thal_'+pre+'_'+post]['weight'] = 0.0005
+                    netParams.connParams['thal_'+pre+'_'+post]['weight'] = 0.00035
 
             for post in cfg.Ipops: 
                 

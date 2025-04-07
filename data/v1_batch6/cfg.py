@@ -46,41 +46,24 @@ cfg.Ipops = []
 cfg.cellNumber = {}
 cfg.popLabel = {}
 cfg.popNumber = {}
-
-# if 'L4' in nodesinfo['mtype'][gid] and distance2Dmean(gid, mean_x, mean_y) < 100.0:
-# ['L4_BP',  'L4_BTC',  'L4_CHC',  'L4_LBC',  'L4_MC',  'L4_NBC',  'L4_NGC',  'L4_SBC',  'L4_SSC',  'L4_TPC',  'L4_UPC'],
-# [2, 4, 1, 14, 10, 9, 1, 2, 73, 528, 204]
-# [Ipops,  'L4_SSC',  'L4_TPC',  'L4_UPC'],
-# [43, 73, 528, 204]
-
-cfg.cellNumber['L4_BP_cNAC_0'] = 13
-cfg.cellNumber['L4_BTC_cNAC_1'] = 15
-cfg.cellNumber['L4_NBC_cNAC_2'] = 15
-cfg.cellNumber['L4_SSC_cADpyr_3'] = 73
-cfg.cellNumber['L4_TPC_cADpyr_4'] = 250
-cfg.cellNumber['L4_TPC_cADpyr_5'] = 278
-cfg.cellNumber['L4_UPC_cADpyr_6'] = 204
-
+  
 for cellName in sorted(cfg.gid_list.keys()):
 
     if 'cADpyr' in cellName:
         cfg.Epops.append(cellName)
+        cfg.cellNumber[cellName] = 100
+        cfg.popNumber[cellName] = 100
     else:
         cfg.Ipops.append(cellName)  
+        cfg.cellNumber[cellName] = 50
+        cfg.popNumber[cellName] = 50
 
-    cfg.popLabel[cellName] = cellName # No cell diversity in NetPyNE
-    cfg.popNumber[cellName] = cfg.cellNumber[cellName] 
-
-
-print(cfg.cellNumber)
-print(cfg.popNumber)
-
-
+    cfg.popLabel[cellName] = cellName # No cell diversity
 
 #------------------------------------------------------------------------------
 # Run parameters
 #------------------------------------------------------------------------------
-cfg.duration = 0.60*1e3 ## Duration of the sim, in ms  
+cfg.duration = 0.40*1e3 ## Duration of the sim, in ms  
 cfg.dt = 0.025
 cfg.seeds = {'cell': 4321, 'conn': 4321, 'stim': 1000, 'loc': 4321} 
 cfg.hParams = {'celsius': 34, 'v_init': -84.0}  
@@ -134,12 +117,12 @@ cfg.recordStep = 0.025
 
 # cfg.saveLFPPops =  cfg.recordCells 
 
-cfg.recordLFP = [[x, y, 500] for y in [600, 750, 900] for x in [0, 100, 200]] # 
+cfg.recordLFP = [[x, y, 150] for y in [200, 400, 600] for x in [0, 50, 100]] # 
 
 #------------------------------------------------------------------------------
 # Saving
 #------------------------------------------------------------------------------
-cfg.simLabel = 'v2_batch0'       #   + str(cfg.cynradNumber)
+cfg.simLabel = 'v1_batch2'       #   + str(cfg.cynradNumber)
 cfg.saveFolder = 'data/'+cfg.simLabel
 # cfg.filename =                	## Set file output name
 cfg.savePickle = True	        	## Save pkl file
@@ -153,14 +136,14 @@ cfg.saveCellConns = True
 #------------------------------------------------------------------------------
 # Analysis and plotting 
 # ------------------------------------------------------------------------------
-cfg.analysis['plotRaster'] = {'saveFig': True, 'showFig': False, 'orderInverse': True, 'timeRange': [498,513], 'figSize': (18,5), 'popRates': True, 
+cfg.analysis['plotRaster'] = {'saveFig': True, 'showFig': False, 'orderInverse': True, 'timeRange': [290,320], 'figSize': (18,5), 'popRates': True, 
                               'fontSize':12, 'markerSize':4, 'marker': 'o', 'dpi': 100} 
 
 cfg.analysis['plot2Dnet']   = {'include': cfg.allpops, 'saveFig': True, 'showConns': False, 'figSize': (12,12), 'view': 'xz', 'fontSize':12}   # Plot 2D cells xy
 
-cfg.analysis['plotTraces'] = {'include': cfg.recordCells, 'oneFigPer': 'trace', 'overlay': True, 'timeRange': [498,513], 'ylim': [-100,50], 'saveFig': True, 'showFig': False, 'figSize':(18,5)}
+cfg.analysis['plotTraces'] = {'include': cfg.recordCells, 'oneFigPer': 'trace', 'overlay': True, 'timeRange': [290,320], 'ylim': [-100,50], 'saveFig': True, 'showFig': False, 'figSize':(12,12)}
 
-cfg.analysis['plotLFP'] = {'separation': 1.0, 'plots': ['timeSeries', 'locations','spectrogram'], 'timeRange': [498,513], 'maxFreq': 500, 'saveFig': True, 'showFig': False}
+cfg.analysis['plotLFP'] = {'separation': 1.0, 'plots': ['timeSeries', 'spectrogram','PSD'], 'timeRange': [290,320], 'maxFreq': 500, 'saveFig': True, 'showFig': False}
 
 #------------------------------------------------------------------------------  
 # Thalamic Cells
@@ -177,11 +160,11 @@ for mtype in cfg.thalamicpops: # No diversity
 cfg.connect_ThVecStim_S1 = True
 cfg.TC_S1 = {}
 cfg.TC_S1['VPM_sTC'] = True
-cfg.TC_S1_weightE = 0.000175
-cfg.TC_S1_weightI = 0.00050
+cfg.TC_S1_weightE = 0.00015
+cfg.TC_S1_weightI = 0.00025
 
 # homogeneous_poisson at 3Hz cos wave and FR~30Hz
-cfg.tmin = 500
+cfg.tmin = 300
 cfg.tdur = 40
 cfg.max_rate = 100.00
 cfg.f_osc = 0.01

@@ -138,7 +138,7 @@ netParams.connParams['E->E_A'] = {
                         'preConds': {'pop': ['L4_SSC_cADpyr_3', 'L4_TPC_cADpyr_4']},
                         'postConds': {'pop': 'L4_UPC_cADpyr_6'},
                         'probability': 0.5,
-                        'synsPerConn': 3,     
+                        'synsPerConn': 2,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
                         'weight': 0.3,                 # synaptic weight 
@@ -160,7 +160,7 @@ netParams.connParams['E->E_C'] = {
                         'preConds': {'pop': 'L4_TPC_cADpyr_5'},
                         'postConds': {'pop': 'L4_SSC_cADpyr_3'},
                         'probability': 1.0,
-                        'synsPerConn': 5,      # was 10
+                        'synsPerConn': 10,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
                         'weight': 0.3,                 # synaptic weight 
@@ -171,7 +171,7 @@ netParams.connParams['E->E_D'] = {
                         'preConds': {'pop': 'L4_TPC_cADpyr_5'},
                         'postConds': {'pop': 'L4_TPC_cADpyr_4'},
                         'probability': 1.0,
-                        'synsPerConn': 4,     # was 8 
+                        'synsPerConn': 8,     
                         'sec': 'basal',                  # target postsyn section
                         'synMech': 'E->E',              # target synaptic mechanism
                         'weight': 0.3,                 # synaptic weight 
@@ -182,7 +182,7 @@ netParams.connParams['E->I'] = {
                         'preConds': {'pop': cfg.Epops},
                         'postConds': {'pop': cfg.Ipops},
                         'probability': 0.7,
-                        'synsPerConn': 4,     # was 6
+                        'synsPerConn': 5,     # was 6
                         'sec': 'somatic',                  # target postsyn section
                         'loc': 0.5,                  # target postsyn loc
                         'synMech': 'E->I',              # target synaptic mechanism
