@@ -260,8 +260,8 @@ if cfg.connect_ThVecStim_S1:
                     'preConds': {'pop': pre},  ####################################################
                     'postConds': {'pop': post},
                     'weight': cfg.TC_S1_weightE,   # synaptic weight 
-                    'sec': 'basal', # target postsyn section
-                    'delay': 'defaultDelay',
+                    'sec': 'basal', # target postsyn section  # secund_delay
+                    'delay': 'defaultDelay', # first_Exc = 0.1 ms + 0.1 ms (0.3 ms)
                     'synsPerConn': int(synapsesperconnection_Th_S1),                     
                     'synMech': ESynMech_Th}  
 
@@ -284,8 +284,8 @@ if cfg.connect_ThVecStim_S1:
                     'preConds': {'pop': pre},  ####################################################
                     'postConds': {'pop': post},
                     'weight': cfg.TC_S1_weightI,   # synaptic weight 
-                    'sec': 'somatic', # target postsyn section
-                    'delay': 'defaultDelay',
+                    'sec': 'somatic', # target postsyn section  # secund_delay
+                    'delay': 'defaultDelay', # first_Inh = 0.1 ms 
                     'synsPerConn': int(synapsesperconnection_Th_S1),                     
                     'synMech': ESynMech_Th}  
 
