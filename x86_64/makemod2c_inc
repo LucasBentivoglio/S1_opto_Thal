@@ -1,0 +1,704 @@
+./ar_traub.c: ../mod2//ar_traub.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ar_traub.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ar_traub.o: ./ar_traub.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./cadad.c: ../mod2//cadad.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cadad.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./cadad.o: ./cadad.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./CaDynamics_DC0.c: ../mod2//CaDynamics_DC0.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CaDynamics_DC0.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./CaDynamics_DC0.o: ./CaDynamics_DC0.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./CaDynamics_E2.c: ../mod2//CaDynamics_E2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CaDynamics_E2.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./CaDynamics_E2.o: ./CaDynamics_E2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./cadyn.c: ../mod2//cadyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cadyn.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./cadyn.o: ./cadyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./cagk.c: ../mod2//cagk.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cagk.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./cagk.o: ./cagk.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_HVA2.c: ../mod2//Ca_HVA2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_HVA2.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./Ca_HVA2.o: ./Ca_HVA2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_HVA.c: ../mod2//Ca_HVA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_HVA.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./Ca_HVA.o: ./Ca_HVA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./cal_mh.c: ../mod2//cal_mh.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cal_mh.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./cal_mh.o: ./cal_mh.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./cal_mig.c: ../mod2//cal_mig.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cal_mig.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./cal_mig.o: ./cal_mig.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_LVAst.c: ../mod2//Ca_LVAst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_LVAst.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./Ca_LVAst.o: ./Ca_LVAst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca.c: ../mod2//Ca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./Ca.o: ./Ca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./cancr.c: ../mod2//cancr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cancr.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./cancr.o: ./cancr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./canin.c: ../mod2//canin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "canin.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./canin.o: ./canin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./can_mig.c: ../mod2//can_mig.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "can_mig.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./can_mig.o: ./can_mig.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./catcb.c: ../mod2//catcb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "catcb.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./catcb.o: ./catcb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./cat_mig.c: ../mod2//cat_mig.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cat_mig.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./cat_mig.o: ./cat_mig.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./cat_traub.c: ../mod2//cat_traub.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cat_traub.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./cat_traub.o: ./cat_traub.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_CavL.c: ../mod2//ch_CavL.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_CavL.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ch_CavL.o: ./ch_CavL.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_CavN.c: ../mod2//ch_CavN.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_CavN.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ch_CavN.o: ./ch_CavN.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KCaS.c: ../mod2//ch_KCaS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KCaS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ch_KCaS.o: ./ch_KCaS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Kdrfastngf.c: ../mod2//ch_Kdrfastngf.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Kdrfastngf.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ch_Kdrfastngf.o: ./ch_Kdrfastngf.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvAngf.c: ../mod2//ch_KvAngf.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvAngf.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ch_KvAngf.o: ./ch_KvAngf.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvCaB.c: ../mod2//ch_KvCaB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvCaB.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ch_KvCaB.o: ./ch_KvCaB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_leak.c: ../mod2//ch_leak.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_leak.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ch_leak.o: ./ch_leak.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Navngf.c: ../mod2//ch_Navngf.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Navngf.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ch_Navngf.o: ./ch_Navngf.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./DetAMPANMDA.c: ../mod2//DetAMPANMDA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "DetAMPANMDA.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./DetAMPANMDA.o: ./DetAMPANMDA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./DetGABAAB.c: ../mod2//DetGABAAB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "DetGABAAB.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./DetGABAAB.o: ./DetGABAAB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./gabab.c: ../mod2//gabab.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "gabab.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./gabab.o: ./gabab.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./h_BS.c: ../mod2//h_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "h_BS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./h_BS.o: ./h_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./HCN1.c: ../mod2//HCN1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "HCN1.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./HCN1.o: ./HCN1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./HH2.c: ../mod2//HH2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "HH2.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./HH2.o: ./HH2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./h_harnett.c: ../mod2//h_harnett.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "h_harnett.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./h_harnett.o: ./h_harnett.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./hin.c: ../mod2//hin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "hin.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./hin.o: ./hin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./h_kole.c: ../mod2//h_kole.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "h_kole.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./h_kole.o: ./h_kole.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./h_migliore.c: ../mod2//h_migliore.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "h_migliore.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./h_migliore.o: ./h_migliore.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./htc.c: ../mod2//htc.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "htc.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./htc.o: ./htc.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ican_sidi.c: ../mod2//ican_sidi.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ican_sidi.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ican_sidi.o: ./ican_sidi.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./iccr.c: ../mod2//iccr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "iccr.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./iccr.o: ./iccr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./IC.c: ../mod2//IC.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "IC.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./IC.o: ./IC.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./iconc_Ca.c: ../mod2//iconc_Ca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "iconc_Ca.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./iconc_Ca.o: ./iconc_Ca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih.c: ../mod2//Ih.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./Ih.o: ./Ih.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ikscr.c: ../mod2//ikscr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ikscr.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ikscr.o: ./ikscr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./IKsin.c: ../mod2//IKsin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "IKsin.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./IKsin.o: ./IKsin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Im.c: ../mod2//Im.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Im.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./Im.o: ./Im.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./IT2.c: ../mod2//IT2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "IT2.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./IT2.o: ./IT2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./IT.c: ../mod2//IT.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "IT.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./IT.o: ./IT.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kap_BS.c: ../mod2//kap_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kap_BS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kap_BS.o: ./kap_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kapcb.c: ../mod2//kapcb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kapcb.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kapcb.o: ./kapcb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kapin.c: ../mod2//kapin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kapin.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kapin.o: ./kapin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kBK.c: ../mod2//kBK.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kBK.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kBK.o: ./kBK.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kca.c: ../mod2//kca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kca.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kca.o: ./kca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kctin.c: ../mod2//kctin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kctin.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kctin.o: ./kctin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdmc_BS.c: ../mod2//kdmc_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdmc_BS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kdmc_BS.o: ./kdmc_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdr_BS.c: ../mod2//kdr_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdr_BS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kdr_BS.o: ./kdr_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrcr.c: ../mod2//kdrcr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdrcr.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kdrcr.o: ./kdrcr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrin.c: ../mod2//kdrin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdrin.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kdrin.o: ./kdrin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./KdShu2007.c: ../mod2//KdShu2007.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "KdShu2007.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./KdShu2007.o: ./KdShu2007.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kl.c: ../mod2//kl.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kl.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kl.o: ./kl.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./km.c: ../mod2//km.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "km.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./km.o: ./km.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_Pst.c: ../mod2//K_Pst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_Pst.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./K_Pst.o: ./K_Pst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_Tst.c: ../mod2//K_Tst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_Tst.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./K_Tst.o: ./K_Tst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kv.c: ../mod2//kv.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kv.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./kv.o: ./kv.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynBB.c: ../mod2//MyExp2SynBB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynBB.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./MyExp2SynBB.o: ./MyExp2SynBB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./my_exp2syn.c: ../mod2//my_exp2syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "my_exp2syn.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./my_exp2syn.o: ./my_exp2syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynNMDABB.c: ../mod2//MyExp2SynNMDABB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynNMDABB.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./MyExp2SynNMDABB.o: ./MyExp2SynNMDABB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./nafcr.c: ../mod2//nafcr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nafcr.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./nafcr.o: ./nafcr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./nafx.c: ../mod2//nafx.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nafx.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./nafx.o: ./nafx.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Nap_Et2.c: ../mod2//Nap_Et2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Nap_Et2.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./Nap_Et2.o: ./Nap_Et2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./nap_sidi.c: ../mod2//nap_sidi.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nap_sidi.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./nap_sidi.o: ./nap_sidi.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTa_t.c: ../mod2//NaTa_t.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTa_t.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./NaTa_t.o: ./NaTa_t.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTg.c: ../mod2//NaTg.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTg.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./NaTg.o: ./NaTg.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTs2_t.c: ../mod2//NaTs2_t.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTs2_t.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./NaTs2_t.o: ./NaTs2_t.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./nax_BS.c: ../mod2//nax_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nax_BS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./nax_BS.o: ./nax_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./naz.c: ../mod2//naz.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "naz.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./naz.o: ./naz.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Nca.c: ../mod2//Nca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Nca.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./Nca.o: ./Nca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./original_ProbAMPANMDA_EMS.c: ../mod2//original_ProbAMPANMDA_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "original_ProbAMPANMDA_EMS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./original_ProbAMPANMDA_EMS.o: ./original_ProbAMPANMDA_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./original_ProbGABAAB_EMS.c: ../mod2//original_ProbGABAAB_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "original_ProbGABAAB_EMS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./original_ProbGABAAB_EMS.o: ./original_ProbGABAAB_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA_EMS.c: ../mod2//ProbAMPANMDA_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPANMDA_EMS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ProbAMPANMDA_EMS.o: ./ProbAMPANMDA_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbGABAAB_EMS.c: ../mod2//ProbGABAAB_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbGABAAB_EMS.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./ProbGABAAB_EMS.o: ./ProbGABAAB_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./savedist.c: ../mod2//savedist.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "savedist.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./savedist.o: ./savedist.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./SK_E2.c: ../mod2//SK_E2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SK_E2.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./SK_E2.o: ./SK_E2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./SKv3_1.c: ../mod2//SKv3_1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SKv3_1.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./SKv3_1.o: ./SKv3_1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./StochKv3.c: ../mod2//StochKv3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "StochKv3.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./StochKv3.o: ./StochKv3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./StochKv_deterministic.c: ../mod2//StochKv_deterministic.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "StochKv_deterministic.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./StochKv_deterministic.o: ./StochKv_deterministic.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./tia.c: ../mod2//tia.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "tia.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./tia.o: ./tia.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./TTXDynamicsSwitch.c: ../mod2//TTXDynamicsSwitch.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "TTXDynamicsSwitch.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./TTXDynamicsSwitch.o: ./TTXDynamicsSwitch.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
+./vecstim.c: ../mod2//vecstim.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "vecstim.mod" -o "/home/lucas-eduardo-bentivoglio/Documents/S1_opto_Thal/x86_64")
+
+./vecstim.o: ./vecstim.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod2" $(INCLUDES) -fPIC -c $< -o $@
+
