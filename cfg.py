@@ -139,7 +139,7 @@ cfg.recordLFP = [[x, y, 500] for y in [600, 750, 900] for x in [0, 100, 200]] #
 #------------------------------------------------------------------------------
 # Saving
 #------------------------------------------------------------------------------
-cfg.simLabel = 'v3_batch0'       #   + str(cfg.cynradNumber)
+cfg.simLabel = 'v2_batch0'       #   + str(cfg.cynradNumber)
 cfg.saveFolder = 'data/'+cfg.simLabel
 # cfg.filename =                	## Set file output name
 cfg.savePickle = True	        	## Save pkl file
