@@ -1,0 +1,39 @@
+{
+    "batch": {
+        "batchLabel": "v2_batch4",
+        "cfgFile": "cfg.py",
+        "evolCfg": {
+            "fitnessFunc": "removed"
+        },
+        "initCfg": {},
+        "method": "grid",
+        "netParamsFile": "netParams.py",
+        "params": [
+            {
+                "label": [
+                    "seeds",
+                    "stim"
+                ],
+                "values": [
+                    1000
+                ]
+            }
+        ],
+        "runCfg": {
+            "allocation": "TG-IBN140002",
+            "coresPerNode": 128,
+            "custom": "#SBATCH --constraint=\"lustre\"\n#SBATCH --mem=128G\n#SBATCH --export=ALL\n#SBATCH --partition=compute",
+            "email": "fernandodasilvaborges@gmail.com",
+            "folder": "/home/fborges/S1_opto_Thal/",
+            "mpiCommand": "mpirun",
+            "nodes": 1,
+            "partition": "compute",
+            "script": "init.py",
+            "skip": true,
+            "type": "hpc_slurm",
+            "walltime": "24:00:00"
+        },
+        "saveFolder": "/expanse/lustre/projects/csd403/fborges/v2_batch4",
+        "seed": null
+    }
+}

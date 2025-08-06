@@ -1,0 +1,35 @@
+{
+    "batch": {
+        "batchLabel": "v1_batch4",
+        "cfgFile": "cfg.py",
+        "evolCfg": {
+            "fitnessFunc": "removed"
+        },
+        "initCfg": {},
+        "method": "grid",
+        "netParamsFile": "netParams.py",
+        "optimCfg": {
+            "fitnessFunc": "removed"
+        },
+        "params": [
+            {
+                "label": [
+                    "seeds",
+                    "stim"
+                ],
+                "values": [
+                    1000
+                ]
+            }
+        ],
+        "runCfg": {
+            "cores": 10,
+            "mpiCommand": "mpiexec",
+            "script": "init.py",
+            "skip": true,
+            "type": "mpi_direct"
+        },
+        "saveFolder": "data/v1_batch4",
+        "seed": null
+    }
+}
