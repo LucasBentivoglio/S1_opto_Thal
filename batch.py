@@ -26,8 +26,8 @@ def custom():
 # ----------------------------------------------------------------------------------------------
 def setRunCfg(b, type='mpi_bulletin'):
     if type=='mpi_bulletin' or type=='mpi':
-        b.runCfg = {'type': 'mpi_bulletin', 
-            'script': 'init.py', 
+        b.runCfg = {'type': 'mpi_bulletin',
+            'script': 'init.py',
             'skip': True}
 
     elif type=='mpi_direct':
@@ -44,44 +44,40 @@ def setRunCfg(b, type='mpi_bulletin'):
 
     elif type == 'hpc_slurm_Expanse':
         b.runCfg = {'type': 'hpc_slurm',
-                    'allocation': 'TG-IBN140002',
-                    'partition': 'large-shared',
+                    'allocation': 'TG-MED240050',
+                    'partition': 'compute',
                     'walltime': '24:00:00',
                     'nodes': 1,
                     'coresPerNode': 128,
-                    'email': 'fernandodasilvaborges@gmail.com',
-                    'folder': '/home/fborges/S1_opto_Thal/',
+                    'email': 'lucas16edu@gmail.com',
+                    'folder': '/home/lbentivoglio/CA1_Model_Teste/',
                     'script': 'init.py',
                     'mpiCommand': 'mpirun',
-                    'custom': '#SBATCH --constraint="lustre"\n#SBATCH --mem=1024G\n#SBATCH --export=ALL\n#SBATCH --partition=large-shared',
-                    'skip': True}
+                    'custom': '#SBATCH --mem=128G\n#SBATCH --export=ALL\n#SBATCH --partition=compute',
+                    'skip': False}
 
     elif type == 'hpc_slurm_jsc':
         b.runCfg = {'type': 'hpc_slurm',
-                    'allocation': 'icei-hbp-00000000006',
+                    'allocation': 'TG-MED240050',
                     'walltime': '24:00:00',
-                    'nodes': 2,
+                    'nodes': 1,
                     'coresPerNode': 128,
-                    'email': 'fernandodasilvaborges@gmail.com',
-                    'folder': '/p/home/jusers/borges1/jusuf/S1_opto_Thal/',
+                    'email': 'lucas16edu@gmail.com',
+                    'folder': '/home/lbentivoglio/S1_opto_Thal/',
                     'script': 'init.py',
                     'mpiCommand': 'srun',
                     'custom': '#SBATCH --account=icei-hbp-00000000006',
                     'skip': True}
-
 # ----------------------------------------------------------------------------------------------
 # Main code
 # ----------------------------------------------------------------------------------------------
 if __name__ == '__main__': 
     b = custom() #
 
-    b.batchLabel = 'v2_batch4'  
-    # b.saveFolder = '/expanse/lustre/projects/csd403/fborges/'+b.batchLabel
-    # b.saveFolder = '/p/project/icei-hbp-00000000006/borges1/'+b.batchLabel
+    b.batchLabel = 'v3_batch1'  
     b.saveFolder = 'data/'+b.batchLabel
     b.method = 'grid'
-    setRunCfg(b, 'mpi_direct')
-    # setRunCfg(b, 'hpc_slurm_Expanse')
+    setRunCfg(b, 'hpc_slurm_Expanse')
     b.run() # run batch
     
      
