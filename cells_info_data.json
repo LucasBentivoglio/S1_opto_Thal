@@ -3,37 +3,33 @@
         "108767": "cNAC_L6NGC",
         "141766": "cNAC_L6NGC",
         "138433": "cNAC_L6NGC",
-        "141369": "cADpyr_L4TPC",
-        "129252": "cADpyr_L4TPC",
-        "133426": "cADpyr_L4TPC",
-        "114284": "cADpyr_L4UPC"
+        "112501": "cADpyr_L4UPC",
+        "118551": "cADpyr_L4UPC",
+        "140868": "cADpyr_L4UPC"
     },
     "Morpholist": {
         "108767": "rp140319_ChC_3_idA_-_Scale_x1.000_y0.950_z1.000_-_Clone_1.asc",
         "141766": "rp110127_L5-2_idG_-_Scale_x1.000_y0.950_z1.000.asc",
         "138433": "rp110131_L5-1_idA_-_Scale_x1.000_y1.025_z1.000_-_Clone_0.asc",
-        "141369": "dend-rp120608_P_3_idD_axon-sm100429a1-5_INT_idG_-_Scale_x1.000_y1.050_z1.000_-_Clone_0.asc",
-        "129252": "dend-mtC050800E_idD_axon-sm100429a1-5_INT_idD_-_Scale_x1.000_y1.050_z1.000_-_Clone_0.asc",
-        "133426": "dend-mtC050800E_idD_axon-sm100429a1-5_INT_idD_-_Scale_x1.000_y0.975_z1.000_-_Clone_0.asc",
-        "114284": "dend-rp120803_P_1_idB_axon-C031097B-P3_-_Scale_x1.000_y0.975_z1.000_-_Clone_0.asc"
+        "112501": "dend-rp120608_P_3_idB_axon-rp120521_P_1_idC_-_Scale_x1.000_y0.950_z1.000.asc",
+        "118551": "dend-C231296A-P4B2_axon-rp120531_P_2_idC_-_Scale_x1.000_y1.025_z1.000.asc",
+        "140868": "dend-rp120608_P_3_idC_axon-vd101102b_INT_idA_-_Scale_x1.000_y0.975_z1.000_-_Clone_1.asc"
     },
     "gid_list": {
         "L4_BP_cNAC_0": 108767,
         "L4_BTC_cNAC_1": 141766,
         "L4_NBC_cNAC_2": 138433,
-        "L4_SSC_cADpyr_3": 141369,
-        "L4_TPC_cADpyr_4": 129252,
-        "L4_TPC_cADpyr_5": 133426,
-        "L4_UPC_cADpyr_6": 114284
+        "L4_UPC_cADpyr_21": 112501,
+        "L4_TPC_cADpyr_56": 118551,
+        "L4_SSC_cADpyr_193": 140868
     },
     "cellName_list": {
         "108767": "L4_BP_cNAC_0",
         "141766": "L4_BTC_cNAC_1",
         "138433": "L4_NBC_cNAC_2",
-        "141369": "L4_SSC_cADpyr_3",
-        "129252": "L4_TPC_cADpyr_4",
-        "133426": "L4_TPC_cADpyr_5",
-        "114284": "L4_UPC_cADpyr_6"
+        "112501": "L4_UPC_cADpyr_21",
+        "118551": "L4_TPC_cADpyr_56",
+        "140868": "L4_SSC_cADpyr_193"
     },
     "cellsList": {
         "L4_BP_cNAC": [
@@ -57,30 +53,25 @@
                 "z": 1365.2468274136243
             }
         ],
-        "L4_SSC_cADpyr": [
+        "L4_UPC_cADpyr": [
             {
-                "x": 689.0141050673932,
-                "y": 792.1306069821917,
-                "z": 1429.8978875952107
+                "x": 727.5520034357146,
+                "y": 793.459507764804,
+                "z": 1482.4021742020934
             }
         ],
         "L4_TPC_cADpyr": [
             {
-                "x": 674.2818787999859,
-                "y": 780.7781048979679,
-                "z": 1350.3839460712861
-            },
-            {
-                "x": 692.0286351572369,
-                "y": 776.6379112552747,
-                "z": 1330.945086987068
+                "x": 690.8924302350201,
+                "y": 783.3209672175409,
+                "z": 1436.2931429914797
             }
         ],
-        "L4_UPC_cADpyr": [
+        "L4_SSC_cADpyr": [
             {
-                "x": 691.020688031399,
-                "y": 782.4386036886364,
-                "z": 1395.3452555645706
+                "x": 646.2529726552474,
+                "y": 776.3299906343816,
+                "z": 1412.4577239512514
             }
         ]
     }
