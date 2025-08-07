@@ -56,10 +56,10 @@ cfg.popNumber = {}
 cfg.cellNumber['L4_BP_cNAC_0'] = 13
 cfg.cellNumber['L4_BTC_cNAC_1'] = 15
 cfg.cellNumber['L4_NBC_cNAC_2'] = 15
-cfg.cellNumber['L4_SSC_cADpyr_3'] = 73
-cfg.cellNumber['L4_TPC_cADpyr_4'] = 250
-cfg.cellNumber['L4_TPC_cADpyr_5'] = 278
-cfg.cellNumber['L4_UPC_cADpyr_6'] = 204
+cfg.cellNumber['L4_SSC_cADpyr_193'] = 73
+cfg.cellNumber['L4_TPC_cADpyr_93'] = 250
+cfg.cellNumber['L4_TPC_cADpyr_56'] = 278
+cfg.cellNumber['L4_UPC_cADpyr_21'] = 204
 
 for cellName in sorted(cfg.gid_list.keys()):
 

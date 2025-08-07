@@ -55,7 +55,7 @@ def cellsINFO(sample = "6cells", layer = 4, distance2Dmin = 0, distance2Dmax = 1
     mean_x, mean_y = np.mean(nodesinfo['x_new']), np.mean(nodesinfo['y_new'])
 
     if sample == "6cells":    
-        for gid in [108767, 141766, 138433, 141369, 133426, 114284]: 
+        for gid in [108767, 141766, 138433, 140868, 125451, 118551]: 
             if str(layer) == nodesinfo['mtype'][gid][1] and distance2Dmean(gid, mean_x, mean_y) > distance2Dmin and distance2Dmean(gid, mean_x, mean_y) <distance2Dmax:  
 
                 print(len(node_gid),gid,nodesinfo['synapse_class'][gid],nodesinfo['mtype'][gid],nodesinfo['model_template'][gid],nodesinfo['morphology'][gid],hex,distance2Dmean(gid, mean_x, mean_y))
