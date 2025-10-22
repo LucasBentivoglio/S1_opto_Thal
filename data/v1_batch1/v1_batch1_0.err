@@ -1,0 +1,18 @@
+/home/fernando/miniconda3/envs/p39/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/home/fernando/miniconda3/envs/p39/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/home/fernando/miniconda3/envs/p39/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/home/fernando/miniconda3/envs/p39/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/home/fernando/miniconda3/envs/p39/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/home/fernando/miniconda3/envs/p39/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+NEURON -- VERSION 8.2.6 HEAD (078a34a9d) 2024-07-24
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "modfiles//CaDynamics_DC0.mod" "modfiles//Ca_HVA2.mod" "modfiles//Ca_LVAst.mod" "modfiles//DetAMPANMDA.mod" "modfiles//DetGABAAB.mod" "modfiles//Ih.mod" "modfiles//kd.mod" "modfiles//kdr.mod" "modfiles//KdShu2007.mod" "modfiles//K_Pst.mod" "modfiles//K_Tst.mod" "modfiles//Kv3_1.mod" "modfiles//MyExp2SynBB.mod" "modfiles//my_exp2syn.mod" "modfiles//MyExp2SynNMDABB.mod" "modfiles//Nap_Et2.mod" "modfiles//nas.mod" "modfiles//NaTg.mod" "modfiles//NaV.mod" "modfiles//ProbAMPANMDA_EMS.mod" "modfiles//ProbGABAAB_EMS.mod" "modfiles//SK_E2.mod" "modfiles//SKv3_1_fs2.mod" "modfiles//SKv3_1_fs.mod" "modfiles//SKv3_1.mod" "modfiles//StochKv3.mod" "modfiles//TTXDynamicsSwitch.mod" "modfiles//vecstim.mod"
