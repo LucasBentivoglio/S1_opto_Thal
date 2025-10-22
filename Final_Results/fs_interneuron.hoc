@@ -1,0 +1,66 @@
+/* fs_interneuron.hoc
+   Template que reproduz a célula definida no model_and_interface.ses
+   (parâmetros extraídos do .ses: L, diam, Ra, cm e condutâncias)
+*/
+
+begintemplate FSCell
+public soma, iclamp
+objref iclamp
+
+create soma
+
+proc init() {
+    soma {
+       
+        nseg = 1
+        L = 3.1831
+        diam = 10
+        Ra = 35.4
+        cm = 1
+
+        // passive
+        insert pas
+
+        g_pas = 0.00025
+        e_pas = -70
+
+        // kd (transiente lento/aux)
+        insert kd
+        // no .ses: soma.gkd_kd = 0.00039
+       
+        gkd_kd = 0.00039
+        gkd = 0.00039
+
+        // kdr (potássio atípico)
+        insert kdr
+        
+        gkdr_kdr = 0.225
+        gkdr = 0.225
+        ek = -90
+
+        // nas (sódio)
+        insert nas
+        
+        gna_nas = 0.1125
+        gna = 0.1125
+        ena = 50
+    }
+}
+
+
+proc addIClamp() {
+    soma {
+        iclamp = new IClamp(0.5)
+        iclamp.del = 48
+        iclamp.dur = 1e9
+        iclamp.amp = 0.00335
+    }
+}
+
+// utilitário para inicializar (compatível com chamadas externas)
+proc create_and_init() {
+    // isto garante que init() seja chamado (útil se NetPyNE não chamar implicitamente)
+    init()
+}
+
+endtemplate FSCell

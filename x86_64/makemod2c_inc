@@ -1,0 +1,224 @@
+./CaDynamics_DC0.c: ../modfiles//CaDynamics_DC0.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CaDynamics_DC0.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./CaDynamics_DC0.o: ./CaDynamics_DC0.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_HVA2.c: ../modfiles//Ca_HVA2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_HVA2.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./Ca_HVA2.o: ./Ca_HVA2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_LVAst.c: ../modfiles//Ca_LVAst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_LVAst.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./Ca_LVAst.o: ./Ca_LVAst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./DetAMPANMDA.c: ../modfiles//DetAMPANMDA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "DetAMPANMDA.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./DetAMPANMDA.o: ./DetAMPANMDA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./DetGABAAB.c: ../modfiles//DetGABAAB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "DetGABAAB.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./DetGABAAB.o: ./DetGABAAB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih.c: ../modfiles//Ih.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./Ih.o: ./Ih.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kd.c: ../modfiles//kd.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kd.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./kd.o: ./kd.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdr.c: ../modfiles//kdr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdr.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./kdr.o: ./kdr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./KdShu2007.c: ../modfiles//KdShu2007.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "KdShu2007.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./KdShu2007.o: ./KdShu2007.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_Pst.c: ../modfiles//K_Pst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_Pst.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./K_Pst.o: ./K_Pst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_Tst.c: ../modfiles//K_Tst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_Tst.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./K_Tst.o: ./K_Tst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Kv3_1.c: ../modfiles//Kv3_1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kv3_1.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./Kv3_1.o: ./Kv3_1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynBB.c: ../modfiles//MyExp2SynBB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynBB.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./MyExp2SynBB.o: ./MyExp2SynBB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./my_exp2syn.c: ../modfiles//my_exp2syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "my_exp2syn.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./my_exp2syn.o: ./my_exp2syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynNMDABB.c: ../modfiles//MyExp2SynNMDABB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynNMDABB.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./MyExp2SynNMDABB.o: ./MyExp2SynNMDABB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Nap_Et2.c: ../modfiles//Nap_Et2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Nap_Et2.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./Nap_Et2.o: ./Nap_Et2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./nas.c: ../modfiles//nas.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nas.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./nas.o: ./nas.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTg.c: ../modfiles//NaTg.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTg.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./NaTg.o: ./NaTg.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaV.c: ../modfiles//NaV.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaV.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./NaV.o: ./NaV.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA_EMS.c: ../modfiles//ProbAMPANMDA_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPANMDA_EMS.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./ProbAMPANMDA_EMS.o: ./ProbAMPANMDA_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbGABAAB_EMS.c: ../modfiles//ProbGABAAB_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbGABAAB_EMS.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./ProbGABAAB_EMS.o: ./ProbGABAAB_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./SK_E2.c: ../modfiles//SK_E2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SK_E2.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./SK_E2.o: ./SK_E2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./SKv3_1_fs2.c: ../modfiles//SKv3_1_fs2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SKv3_1_fs2.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./SKv3_1_fs2.o: ./SKv3_1_fs2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./SKv3_1_fs.c: ../modfiles//SKv3_1_fs.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SKv3_1_fs.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./SKv3_1_fs.o: ./SKv3_1_fs.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./SKv3_1.c: ../modfiles//SKv3_1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SKv3_1.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./SKv3_1.o: ./SKv3_1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./StochKv3.c: ../modfiles//StochKv3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "StochKv3.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./StochKv3.o: ./StochKv3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./TTXDynamicsSwitch.c: ../modfiles//TTXDynamicsSwitch.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "TTXDynamicsSwitch.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./TTXDynamicsSwitch.o: ./TTXDynamicsSwitch.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./vecstim.c: ../modfiles//vecstim.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "vecstim.mod" -o "/home/fernando/Dropbox/UEPG_DN/Ultra_Fast_Ripple/S1_opto_Thal/x86_64")
+
+./vecstim.o: ./vecstim.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
