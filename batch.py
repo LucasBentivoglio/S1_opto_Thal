@@ -80,8 +80,8 @@ if __name__ == '__main__':
     # b.saveFolder = '/p/project/icei-hbp-00000000006/borges1/'+b.batchLabel
     b.saveFolder = 'data/'+b.batchLabel
     b.method = 'grid'
-    setRunCfg(b, 'mpi_direct')
-    # setRunCfg(b, 'hpc_slurm_Expanse')
+    # setRunCfg(b, 'mpi_direct')
+    setRunCfg(b, 'hpc_slurm_Expanse')
     b.run() # run batch
     
      
